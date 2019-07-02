@@ -1,0 +1,26 @@
+{
+	"name": "IncrementalCopyPipeline",
+	"image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 240\" width=\"400px\" height=\"240px\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g clip-path=\"url(#mainClip69099)\" transform=\"matrix(1, 0, 0, 1, 0, 0)\"><g transform=\"matrix(0.851064, 0, 0, 0.851064, 113.617, 84.2553)\"><g transform=\"matrix(1, 0, 0, 1, 0, 0)\"><g transform=\"matrix(1, 0, 0, 1, 0, 0)\"><g transform=\"matrix(1, 0, 0, 1, 0, 0)\"><g transform=\"matrix(1, 0, 0, 1, 0, 0)\"><g transform=\"matrix(1, 0, 0, 1, 0.8, 0.8)\"><rect fill=\"#f4f4f4\" stroke=\"none\" transform=\"matrix(1, 0, 0, 1, 0, 0)\" x=\"0\" y=\"0\" width=\"192.4\" height=\"82.4\"/><g transform=\"matrix(1, 0, 0, 1, 0, 0)\"><rect fill=\"#dcdcdc\" stroke=\"none\" transform=\"matrix(1, 0, 0, 1, 0, 0)\" x=\"0\" y=\"0\" width=\"192.4\" height=\"25\"/><g clip-path=\"url(#CLIP69100)\" transform=\"matrix(1, 0, 0, 1, 0, 0)\"><text style=\"font: 12px Segoe UI\" fill=\"#515151\" stroke=\"none\" text-anchor=\"start\" transform=\"matrix(1, 0, 0, 1, 5, 6.5)\" x=\"0\" y=\"10.5105\">ForEach</text></g></g><g transform=\"matrix(1, 0, 0, 1, 0, 25)\"><g transform=\"matrix(1, 0, 0, 1, 10, 13.5)\"><path fill=\"#424242\" stroke=\"none\" transform=\"matrix(1, 0, 0, 1, 0, 0)\" d=\"M 16.944 7.065 L 15.8835 6.0045 L 12.0435 9.8445 L 15.789 13.59 L 16.8495 12.5295 L 14.8215 10.5015 L 22.542 10.5015 L 22.542 10.5 L 24 10.5 L 24 21 L 12 21 L 12 6 L 4.5 6 L 4.5 25.5 L 12 25.5 L 12 22.5 L 25.5 22.5 L 25.5 9 L 15.0105 9 L 16.944 7.065 Z M 10.5 24 L 6 24 L 6 19.5 L 10.5 19.5 L 10.5 24 Z M 10.5 18 L 6 18 L 6 13.5 L 10.5 13.5 L 10.5 18 Z M 10.5 12 L 6 12 L 6 7.5 L 10.5 7.5 L 10.5 12 Z\"/></g><g clip-path=\"url(#CLIP69101)\" transform=\"matrix(1, 0, 0, 1, 0, 0)\"><g transform=\"matrix(1, 0, 0, 1, 50, 21.3295)\"><text style=\"font: 14px Segoe UI\" fill=\"black\" stroke=\"none\" text-anchor=\"start\" transform=\"matrix(1, 0, 0, 1, 0, 0)\" x=\"0\" y=\"12.2558\">IterateSQLTables</text></g></g></g></g><path fill=\"transparent\" stroke=\"none\" transform=\"matrix(1, 0, 0, 1, 0.5, 0.5)\" d=\"M 2 0 L 191 0 C 191.895 0 193 1.10457 193 2 L 193 81 C 193 81.8954 191.895 83 191 83 L 2 83 C 1.10457 83 0 81.8954 0 81 L 0 2 C 0 1.10457 1.10457 0 2 0 Z\"/><path fill=\"none\" stroke=\"#c8c8c8\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-width=\"1\" transform=\"matrix(1, 0, 0, 1, 0.5, 0.5)\" d=\"M 2 0 L 191 0 C 191.895 0 193 1.10457 193 2 L 193 81 C 193 81.8954 191.895 83 191 83 L 2 83 C 1.10457 83 0 81.8954 0 81 L 0 2 C 0 1.10457 1.10457 0 2 0 Z\"/></g></g></g><g transform=\"matrix(1, 0, 0, 1, 194, 1)\"><g transform=\"matrix(1, 0, 0, 1, 0, 34)\"><g transform=\"matrix(1, 0, 0, 1, 0, 0)\"><path fill=\"#488e50\" stroke=\"none\" transform=\"matrix(1, 0, 0, 1, 0, 1)\" d=\"M 0 0 L 9 0 L 9 12 L 0 12 Z\"/></g></g></g></g></g></g><clipPath id=\"mainClip69099\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"240\"/></clipPath><clipPath id=\"CLIP69100\"><path transform=\"matrix(1, 0, 0, 1, 0, 0)\" d=\"M 5 6.5 L 192.4 6.5 L 192.4 25 L 5 25 Z\"/></clipPath><clipPath id=\"CLIP69101\"><path transform=\"matrix(1, 0, 0, 1, 0, 0)\" d=\"M 50 21.3295 L 192.4 21.3295 L 192.4 37.6705 L 50 37.6705 Z\"/></clipPath></svg>",
+	"icons": [
+		"ForEach",
+		"AzureSqlTable",
+		"SqlServerTable"
+	],
+	"requires": {
+		"linkedservices": {
+			"AzureSqlDatabaseLinkedService": {
+				"supportTypes": [
+					"AzureSqlDatabase"
+				]
+			},
+			"SqlServerLinkedService": {
+				"supportTypes": [
+					"SqlServer"
+				]
+			}
+		}
+	},
+	"author": "vigneshkrish.vk@gmail.com",
+	"annotations": [],
+	"services": []
+}
