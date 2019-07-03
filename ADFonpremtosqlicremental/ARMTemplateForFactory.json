@@ -323,7 +323,7 @@
 										"source": {
 											"type": "SqlServerSource",
 											"sqlReaderQuery": {
-												"value": "select * from @{item().TABLE_NAME} where @{item().WaterMark_Column} > '@{activity('LookupWaterMark').output.firstRow.WatermarkValue}' and @{item().WaterMark_Column} <= '@{activity('LookupSOurce').output.firstRow.NewWatermarkvalue}'",
+												"value": "select * from @{item().TABLE_NAME} where @{item().WaterMark_Column} > '@{activity('LookupWatermark').output.firstRow.WatermarkValue}' and @{item().WaterMark_Column} <= '@{activity('LookupSOurce').output.firstRow.NewWatermarkvalue}'",
 												"type": "Expression"
 											}
 										},
