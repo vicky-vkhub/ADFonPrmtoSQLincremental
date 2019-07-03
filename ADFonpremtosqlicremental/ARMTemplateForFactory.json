@@ -388,7 +388,7 @@
 											},
 											"TableName": {
 												"value": {
-													"value": "@{activity('LookupWaterMark').output.firstRow.TableName}",
+													"value": "@{activity('LookupWatermark').output.firstRow.TableName}",
 													"type": "Expression"
 												},
 												"type": "String"
