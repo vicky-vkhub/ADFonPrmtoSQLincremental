@@ -87,7 +87,10 @@
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
-									"sqlReaderQuery": "select * from @{item().TABLE_NAME} where @{item().WaterMark_Column} > '@{activity('LookupOldWaterMarkActivity').output.firstRow.WatermarkValue}' and @{item().WaterMark_Column} <= '@{activity('LookupNewWaterMarkActivity').output.firstRow.NewWatermarkvalue}'"
+									"sqlReaderQuery": {
+										"value": "select * from @{item().TABLE_NAME} where @{item().WaterMark_Column} > '@{activity('LookupWaterMark').output.firstRow.WatermarkValue}' and @{item().WaterMark_Column} <= '@{activity('LookupSOurce').output.firstRow.NewWatermarkvalue}'",
+										"type": "Expression"
+									}
 								},
 								"sink": {
 									"type": "AzureSqlSink",
