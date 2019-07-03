@@ -28,7 +28,10 @@
 							"typeProperties": {
 								"source": {
 									"type": "AzureSqlSource",
-									"sqlReaderQuery": "select * from watermarktable where TableName  =  '@{item().TABLE_NAME}'"
+									"sqlReaderQuery": {
+										"value": "select * from watermarktable where TableName  =  '@{item().TABLE_NAME}'",
+										"type": "Expression"
+									}
 								},
 								"dataset": {
 									"referenceName": "WatermarkDataset",
@@ -51,7 +54,10 @@
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
-									"sqlReaderQuery": "select MAX(@{item().WaterMark_Column}) as NewWatermarkvalue from @{item().TABLE_NAME}"
+									"sqlReaderQuery": {
+										"value": "select MAX(@{item().WaterMark_Column}) as NewWatermarkvalue from @{item().TABLE_NAME}",
+										"type": "Expression"
+									}
 								},
 								"dataset": {
 									"referenceName": "SourceDataset",
@@ -98,7 +104,10 @@
 										"value": "@{item().StoredProcedureNameForMergeOperation}",
 										"type": "Expression"
 									},
-									"sqlWriterTableType": "@{item().TableType}"
+									"sqlWriterTableType": {
+										"value": "@{item().TableType}",
+										"type": "Expression"
+									}
 								},
 								"enableStaging": false
 							},
@@ -141,11 +150,17 @@
 								"storedProcedureName": "[dbo].[Update_ChangeTracking_Version]",
 								"storedProcedureParameters": {
 									"CurrentTrackingVersion": {
-										"value": "@{activity('LookupSOurce').output.firstRow.NewWatermarkvalue}",
+										"value": {
+											"value": "@{activity('LookupSOurce').output.firstRow.NewWatermarkvalue}",
+											"type": "Expression"
+										},
 										"type": "Int64"
 									},
 									"TableName": {
-										"value": "@{activity('LookupWaterMark').output.firstRow.TableName}",
+										"value": {
+											"value": "@{activity('LookupWatermark').output.firstRow.TableName}",
+											"type": "Expression"
+										},
 										"type": "String"
 									}
 								}
