@@ -501,14 +501,14 @@
 									},
 									"userProperties": [],
 									"typeProperties": {
-										"storedProcedureName": "[[dbo].[Update_ChangeTracking_Version]",
+										"storedProcedureName": "[[dbo].[usp_write_watermark]",
 										"storedProcedureParameters": {
-											"CurrentTrackingVersion": {
+											"LastModifiedtime": {
 												"value": {
 													"value": "@{activity('LookupSOurce').output.firstRow.NewWatermarkvalue}",
 													"type": "Expression"
 												},
-												"type": "Int64"
+												"type": "DateTime"
 											},
 											"TableName": {
 												"value": {
